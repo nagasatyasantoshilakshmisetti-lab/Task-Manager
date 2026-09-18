@@ -1,0 +1,1638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>satya's dash board</title>🌙</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         BACKGROUND
+    ========================================== -->
+
+    <div class="background-overlay"></div>
+
+    <!-- =========================================
+         MAIN APP
+    ========================================== -->
+
+    <div class="app">
+
+        <!-- =====================================
+             SIDEBAR
+        ====================================== -->
+
+        <aside class="sidebar">
+
+            <div class="brand">
+
+                <div class="brand-icon">
+                    🌸
+                </div>
+
+                <div>
+                    <h1>hey santoshi........</h1>
+
+                    <p>
+                         tiny steps ✦ big dreams ✦
+                        a peaceful you
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- Navigation -->
+
+            <nav class="navigation">
+
+                <button class="nav-item active"
+                        onclick="scrollToSection('home')">
+
+                    🏠
+                    <span>Home</span>
+
+                </button>
+
+
+                <button class="nav-item"
+                        onclick="scrollToSection('myDaySection')">
+
+                    📅
+                    <span>My Day</span>
+
+                </button>
+
+
+                <button class="nav-item"
+                        onclick="scrollToSection('habitsSection')">
+
+                    🌱
+                    <span>Habits</span>
+
+                </button>
+
+
+                <button class="nav-item"
+                        onclick="scrollToSection('journalSection')">
+
+                    📖
+                    <span>Journal</span>
+
+                </button>
+
+
+                <button class="nav-item"
+                        onclick="scrollToSection('settingsSection')">
+
+                    ⚙️
+                    <span>Settings</span>
+
+                </button>
+
+            </nav>
+
+
+            <!-- Sidebar quote -->
+
+            <div class="sidebar-quote">
+
+                <div>✦</div>
+
+                <p>
+                    You're<br>
+                    doing<br>
+                    amazing
+                </p>
+
+                <span>♡</span>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =====================================
+             MAIN CONTENT
+        ====================================== -->
+
+        <main class="main-content">
+
+
+            <!-- =================================
+                 HOME
+            ================================== -->
+
+            <section id="home">
+
+
+                <!-- TOP BAR -->
+
+                <header class="top-bar">
+
+                    <div class="mini-brand">
+                        🌸 My Moon Garden
+                    </div>
+
+
+                    <div class="date-time">
+
+                        <div id="currentDate">
+                            Loading date...
+                        </div>
+
+                        <strong id="currentTime">
+                            00:00
+                        </strong>
+
+                        <span>
+                            🌙
+                        </span>
+
+                    </div>
+
+                </header>
+
+
+
+                <!-- =================================
+                     HERO
+                ================================== -->
+
+                <section class="hero">
+
+                    <div class="hero-content">
+
+                        <small>
+                            🌸 TODAY'S GENTLE REMINDER
+                        </small>
+
+
+                        <h2 id="greeting">
+                            Good morning, keep growing ♡
+                        </h2>
+
+
+                        <p>
+                            You don't have to rush through today.
+                            <br>
+                            Take one step at a time and enjoy
+                            the little moments.
+                        </p>
+
+
+                        <div class="hero-line">
+                            ✦ ───────── ♡ ───────── ✦
+                        </div>
+
+                    </div>
+
+
+                    <div class="hero-decoration">
+                        🌙
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     NEXT TASK
+                ================================== -->
+
+                <section class="next-task-card">
+
+                    <div class="next-task-header">
+
+                        <span class="next-icon">
+                            ⏰
+                        </span>
+
+                        <div>
+
+                            <small>
+                                NEXT TASK
+                            </small>
+
+                            <h3 id="nextTaskTime">
+                                03:00 PM
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="next-task-content">
+
+                        <h2 id="nextTaskTitle">
+                            Study / Project Time
+                        </h2>
+
+                        <p id="nextTaskDescription">
+                            Assignments • Projects • Skills
+                        </p>
+
+                    </div>
+
+
+                    <div class="next-countdown">
+
+                        <span>
+                            ⏳
+                        </span>
+
+                        <span id="countdown">
+                            Starts soon
+                        </span>
+
+                    </div>
+
+
+                    <button class="primary-button"
+                            onclick="openFocusMode()">
+
+                        Start Focus →
+
+                    </button>
+
+                </section>
+
+
+
+                <!-- =================================
+                     STAT CARDS
+                ================================== -->
+
+                <section class="stats-grid">
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon">
+                            🌱
+                        </div>
+
+                        <div>
+
+                            <small>
+                                Today's Progress
+                            </small>
+
+                            <strong id="todayProgress">
+                                0%
+                            </strong>
+
+                            <div class="progress-bar">
+
+                                <div id="todayProgressBar">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon fire">
+                            🔥
+                        </div>
+
+                        <div>
+
+                            <small>
+                                Current Streak
+                            </small>
+
+                            <strong id="streak">
+                                0 days
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon check">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <small>
+                                Completed
+                            </small>
+
+                            <strong id="completedCount">
+                                0 / 11
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     ACTION CENTER
+                ================================== -->
+
+                <section id="actionCenter"
+                         class="action-center">
+
+                    <div class="action-header">
+
+                        <span>
+                            🌸
+                        </span>
+
+                        <div>
+
+                            <small>
+                                PRODUCTIVITY ASSISTANT
+                            </small>
+
+                            <h3>
+                                Today's Action Center
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div id="actionStatus"
+                         class="action-status">
+
+                        UP NEXT
+
+                    </div>
+
+
+                    <div class="action-main">
+
+                        <h2 id="actionTitle">
+                            Your next task
+                        </h2>
+
+                        <p id="actionDescription">
+                            Stay calm, stay focused and
+                            take one step at a time ✨
+                        </p>
+
+                    </div>
+
+
+                    <div class="action-time">
+
+                        <span id="actionTime">
+                            --:--
+                        </span>
+
+                        <span id="actionCountdown">
+                            Waiting...
+                        </span>
+
+                    </div>
+
+
+                    <div class="action-buttons">
+
+                        <button id="actionStartBtn">
+                            ▶ Start Task
+                        </button>
+
+                        <button id="actionCompleteBtn">
+                            ✓ Mark Complete
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     DAILY RHYTHM
+                ================================== -->
+
+                <section class="dashboard-grid">
+
+
+                    <div class="glass-card routine-card">
+
+                        <div class="section-heading">
+
+                            <div>
+                                🌸
+                            </div>
+
+                            <div>
+
+                                <small>
+                                    YOUR DAILY RHYTHM
+                                </small>
+
+                                <h2>
+                                    Today's Routine
+                                </h2>
+
+                                <p>
+                                    Small steps, big dreams ♡
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div id="routineList"
+                             class="routine-list">
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================
+                         EVENING SANCTUARY
+                    ================================== -->
+
+                    <section class="glass-card evening-sanctuary">
+
+                        <div class="section-heading">
+
+                            <div>
+                                🌙
+                            </div>
+
+                            <div>
+
+                                <small>
+                                    EVENING RESET
+                                </small>
+
+                                <h2>
+                                    Evening Sanctuary
+                                </h2>
+
+                                <p>
+                                    Your peaceful time ♡
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <p class="sanctuary-subtitle">
+                            Slow down. Reconnect.
+                            End the day peacefully. ✨
+                        </p>
+
+
+                        <div class="evening-cards">
+
+
+                            <div class="evening-card"
+                                 onclick="toggleEvening(1)">
+
+                                <div class="evening-icon">
+                                    🌿
+                                </div>
+
+                                <div class="evening-info">
+
+                                    <span>
+                                        05:00 PM
+                                    </span>
+
+                                    <h3>
+                                        Gardening + Walk
+                                    </h3>
+
+                                    <p>
+                                        Green tea • Nature • Peace
+                                    </p>
+
+                                </div>
+
+                                <button class="evening-check"
+                                        id="eveningCheck1">
+
+                                    ○
+
+                                </button>
+
+                            </div>
+
+
+
+                            <div class="evening-card"
+                                 onclick="toggleEvening(2)">
+
+                                <div class="evening-icon">
+                                    🧘
+                                </div>
+
+                                <div class="evening-info">
+
+                                    <span>
+                                        06:00 PM
+                                    </span>
+
+                                    <h3>
+                                        Meditation
+                                    </h3>
+
+                                    <p>
+                                        Reconnect with yourself
+                                    </p>
+
+                                </div>
+
+                                <button class="evening-check"
+                                        id="eveningCheck2">
+
+                                    ○
+
+                                </button>
+
+                            </div>
+
+
+
+                            <div class="evening-card"
+                                 onclick="toggleEvening(3)">
+
+                                <div class="evening-icon">
+                                    💗
+                                </div>
+
+                                <div class="evening-info">
+
+                                    <span>
+                                        07:00 PM
+                                    </span>
+
+                                    <h3>
+                                        Family Time
+                                    </h3>
+
+                                    <p>
+                                        Be present • Be happy
+                                    </p>
+
+                                </div>
+
+                                <button class="evening-check"
+                                        id="eveningCheck3">
+
+                                    ○
+
+                                </button>
+
+                            </div>
+
+
+
+                            <div class="evening-card"
+                                 onclick="toggleEvening(4)">
+
+                                <div class="evening-icon">
+                                    📖
+                                </div>
+
+                                <div class="evening-info">
+
+                                    <span>
+                                        08:00 PM
+                                    </span>
+
+                                    <h3>
+                                        Journaling + Books
+                                    </h3>
+
+                                    <p>
+                                        Time with yourself
+                                    </p>
+
+                                </div>
+
+                                <button class="evening-check"
+                                        id="eveningCheck4">
+
+                                    ○
+
+                                </button>
+
+                            </div>
+
+
+
+                            <div class="evening-card"
+                                 onclick="toggleEvening(5)">
+
+                                <div class="evening-icon">
+                                    🌌
+                                </div>
+
+                                <div class="evening-info">
+
+                                    <span>
+                                        09:00 PM
+                                    </span>
+
+                                    <h3>
+                                        Night Reflection
+                                    </h3>
+
+                                    <p>
+                                        Rest • Recharge • Dream
+                                    </p>
+
+                                </div>
+
+                                <button class="evening-check"
+                                        id="eveningCheck5">
+
+                                    ○
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div id="eveningProgress"
+                             class="evening-progress">
+
+                            0 / 5 evening activities completed
+
+                        </div>
+
+                    </section>
+
+                </section>
+
+
+
+                <!-- =================================
+                     MY DAY
+                ================================== -->
+
+                <section id="myDaySection"
+                         class="my-day-section">
+
+                    <div class="section-heading">
+
+                        <div>
+                            🌷
+                        </div>
+
+                        <div>
+
+                            <small>
+                                YOUR PERSONAL FLOW
+                            </small>
+
+                            <h2>
+                                My Day
+                            </h2>
+
+                            <p>
+                                One peaceful step at a time ✨
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div id="myDayTimeline"
+                         class="my-day-timeline">
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     DAILY GOALS
+                ================================== -->
+
+                <section class="daily-goals">
+
+                    <div class="section-heading">
+
+                        <div>
+                            🎯
+                        </div>
+
+                        <div>
+
+                            <small>
+                                TODAY'S INTENTION
+                            </small>
+
+                            <h2>
+                                My Daily Goals
+                            </h2>
+
+                            <p>
+                                Focus on what matters most today ✨
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Goal 1 -->
+
+                    <div class="goal-item">
+
+                        <span>
+                            01
+                        </span>
+
+                        <div class="goal-content">
+
+                            <input
+                                id="goal1"
+                                type="text"
+                                placeholder="My most important goal..."
+                            >
+
+
+                            <div class="goal-options">
+
+                                <select id="priority1">
+
+                                    <option value="High">
+                                        🔴 High
+                                    </option>
+
+                                    <option value="Medium"
+                                            selected>
+                                        🟡 Medium
+                                    </option>
+
+                                    <option value="Low">
+                                        🟢 Low
+                                    </option>
+
+                                </select>
+
+
+                                <input
+                                    id="note1"
+                                    type="text"
+                                    placeholder="Small note..."
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="goal-buttons">
+
+                            <button
+                                onclick="startGoalFocus(1)">
+                                🎯
+                            </button>
+
+                            <button
+                                onclick="completeGoal(1)">
+                                ✓
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Goal 2 -->
+
+                    <div class="goal-item">
+
+                        <span>
+                            02
+                        </span>
+
+                        <div class="goal-content">
+
+                            <input
+                                id="goal2"
+                                type="text"
+                                placeholder="Another important goal..."
+                            >
+
+
+                            <div class="goal-options">
+
+                                <select id="priority2">
+
+                                    <option value="High">
+                                        🔴 High
+                                    </option>
+
+                                    <option value="Medium"
+                                            selected>
+                                        🟡 Medium
+                                    </option>
+
+                                    <option value="Low">
+                                        🟢 Low
+                                    </option>
+
+                                </select>
+
+
+                                <input
+                                    id="note2"
+                                    type="text"
+                                    placeholder="Small note..."
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="goal-buttons">
+
+                            <button
+                                onclick="startGoalFocus(2)">
+                                🎯
+                            </button>
+
+                            <button
+                                onclick="completeGoal(2)">
+                                ✓
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Goal 3 -->
+
+                    <div class="goal-item">
+
+                        <span>
+                            03
+                        </span>
+
+                        <div class="goal-content">
+
+                            <input
+                                id="goal3"
+                                type="text"
+                                placeholder="Something good for myself..."
+                            >
+
+
+                            <div class="goal-options">
+
+                                <select id="priority3">
+
+                                    <option value="High">
+                                        🔴 High
+                                    </option>
+
+                                    <option value="Medium"
+                                            selected>
+                                        🟡 Medium
+                                    </option>
+
+                                    <option value="Low">
+                                        🟢 Low
+                                    </option>
+
+                                </select>
+
+
+                                <input
+                                    id="note3"
+                                    type="text"
+                                    placeholder="Small note..."
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="goal-buttons">
+
+                            <button
+                                onclick="startGoalFocus(3)">
+                                🎯
+                            </button>
+
+                            <button
+                                onclick="completeGoal(3)">
+                                ✓
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div id="goalProgress"
+                         class="goal-progress">
+
+                        0 / 3 completed
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     FOCUS MODE
+                ================================== -->
+
+                <section id="focusMode"
+                         class="focus-mode">
+
+                    <div class="focus-header">
+
+                        <span>
+                            🎯
+                        </span>
+
+                        <div>
+
+                            <small>
+                                FOCUS MODE
+                            </small>
+
+                            <h2 id="focusTaskName">
+                                Focus Time
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div id="focusTimer"
+                         class="focus-timer">
+
+                        25:00
+
+                    </div>
+
+
+                    <p id="focusMessage">
+
+                        One task. One moment.
+                        You can do this ✨
+
+                    </p>
+
+
+                    <div class="focus-buttons">
+
+                        <button id="pauseFocus">
+                            ⏸ Pause
+                        </button>
+
+                        <button id="resetFocus">
+                            ↻ Reset
+                        </button>
+
+                        <button id="finishFocus">
+                            ✓ Finish
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     DAILY PROGRESS
+                ================================== -->
+
+                <section class="daily-progress">
+
+                    <div class="section-heading">
+
+                        <div>
+                            🌟
+                        </div>
+
+                        <div>
+
+                            <small>
+                                YOUR DAY AT A GLANCE
+                            </small>
+
+                            <h2>
+                                Daily Progress
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="progress-content">
+
+                        <div class="progress-circle">
+
+                            <div>
+
+                                <strong id="overallProgress">
+                                    0%
+                                </strong>
+
+                                <span>
+                                    complete
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="progress-message">
+
+                            <h3 id="progressMessage">
+                                Let's begin your day 🌸
+                            </h3>
+
+                            <p id="progressDetails">
+                                Every small step counts.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     HABITS
+                ================================== -->
+
+                <section id="habitsSection"
+                         class="habits-section">
+
+                    <div class="section-heading">
+
+                        <div>
+                            🌱
+                        </div>
+
+                        <div>
+
+                            <small>
+                                SMALL DAILY ACTIONS
+                            </small>
+
+                            <h2>
+                                My Habits
+                            </h2>
+
+                            <p>
+                                Better habits, a happier me ♡
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div id="habitGrid"
+                         class="habit-grid">
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     TOMORROW PLANNER
+                ================================== -->
+
+                <section class="tomorrow-planner">
+
+                    <div class="section-heading">
+
+                        <div>
+                            🌅
+                        </div>
+
+                        <div>
+
+                            <small>
+                                PREPARE AHEAD
+                            </small>
+
+                            <h2>
+                                Tomorrow's Plan
+                            </h2>
+
+                            <p>
+                                Make tomorrow easier tonight ✨
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="tomorrow-content">
+
+                        <div class="tomorrow-date"
+                             id="tomorrowDate">
+
+                            Tomorrow
+
+                        </div>
+
+
+                        <div class="tomorrow-input">
+
+                            <input
+                                id="tomorrowGoal"
+                                type="text"
+                                placeholder="What is one important thing for tomorrow?"
+                            >
+
+                            <button
+                                onclick="saveTomorrowPlan()">
+
+                                Save
+
+                            </button>
+
+                        </div>
+
+
+                        <textarea
+                            id="tomorrowNotes"
+                            placeholder="Anything you want to remember for tomorrow..."
+                        ></textarea>
+
+
+                        <div class="tomorrow-saved"
+                             id="tomorrowSaved">
+
+                            ✦ Saved automatically
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     WEEKLY REVIEW
+                ================================== -->
+
+                <section class="weekly-review">
+
+                    <div class="section-heading">
+
+                        <div>
+                            📊
+                        </div>
+
+                        <div>
+
+                            <small>
+                                LOOK BACK GENTLY
+                            </small>
+
+                            <h2>
+                                Weekly Review
+                            </h2>
+
+                            <p>
+                                Notice your progress, not perfection ♡
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="weekly-grid">
+
+                        <div class="weekly-stat">
+
+                            <span>
+                                🌱
+                            </span>
+
+                            <strong id="weeklyTasks">
+                                0
+                            </strong>
+
+                            <small>
+                                Tasks completed
+                            </small>
+
+                        </div>
+
+
+                        <div class="weekly-stat">
+
+                            <span>
+                                🎯
+                            </span>
+
+                            <strong id="weeklyGoals">
+                                0
+                            </strong>
+
+                            <small>
+                                Goals completed
+                            </small>
+
+                        </div>
+
+
+                        <div class="weekly-stat">
+
+                            <span>
+                                💗
+                            </span>
+
+                            <strong id="weeklyHabits">
+                                0
+                            </strong>
+
+                            <small>
+                                Habits completed
+                            </small>
+
+                        </div>
+
+
+                        <div class="weekly-stat">
+
+                            <span>
+                                🔥
+                            </span>
+
+                            <strong id="weeklyStreak">
+                                0
+                            </strong>
+
+                            <small>
+                                Day streak
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div id="weeklyTracker"
+                         class="weekly-tracker">
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     ACHIEVEMENTS
+                ================================== -->
+
+                <section class="achievements">
+
+                    <div class="section-heading">
+
+                        <div>
+                            🏆
+                        </div>
+
+                        <div>
+
+                            <small>
+                                LITTLE WINS MATTER
+                            </small>
+
+                            <h2>
+                                My Achievements
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="achievement-grid">
+
+
+                        <div class="achievement-card">
+
+                            <div>
+                                🌱
+                            </div>
+
+                            <h3>
+                                First Step
+                            </h3>
+
+                            <p>
+                                Complete your first task.
+                            </p>
+
+                            <span id="achievementFirst">
+                                🔒
+                            </span>
+
+                        </div>
+
+
+                        <div class="achievement-card">
+
+                            <div>
+                                🔥
+                            </div>
+
+                            <h3>
+                                Consistency
+                            </h3>
+
+                            <p>
+                                Build a 3-day streak.
+                            </p>
+
+                            <span id="achievementStreak">
+                                🔒
+                            </span>
+
+                        </div>
+
+
+                        <div class="achievement-card">
+
+                            <div>
+                                🎯
+                            </div>
+
+                            <h3>
+                                Goal Keeper
+                            </h3>
+
+                            <p>
+                                Complete all 3 goals.
+                            </p>
+
+                            <span id="achievementGoals">
+                                🔒
+                            </span>
+
+                        </div>
+
+
+                        <div class="achievement-card">
+
+                            <div>
+                                🌙
+                            </div>
+
+                            <h3>
+                                Moon Garden
+                            </h3>
+
+                            <p>
+                                Complete your whole routine.
+                            </p>
+
+                            <span id="achievementRoutine">
+                                🔒
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     JOURNAL
+                ================================== -->
+
+                <section id="journalSection"
+                         class="journal-section">
+
+                    <div class="section-heading">
+
+                        <div>
+                            📖
+                        </div>
+
+                        <div>
+
+                            <small>
+                                A LITTLE TIME WITH MYSELF
+                            </small>
+
+                            <h2>
+                                Journal
+                            </h2>
+
+                            <p>
+                                Write, reflect, understand ♡
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="journal-box">
+
+                        <div class="journal-prompts">
+
+                            <p>
+                                How was my day?
+                            </p>
+
+                            <p>
+                                What did I learn?
+                            </p>
+
+                            <p>
+                                What am I grateful for?
+                            </p>
+
+                            <p>
+                                What made me happy today?
+                            </p>
+
+                        </div>
+
+
+                        <textarea
+                            id="journal"
+                            placeholder="Write your thoughts here..."
+                        ></textarea>
+
+
+                        <div class="journal-footer">
+
+                            <span id="journalStatus">
+                                ✓ Saved automatically
+                            </span>
+
+                            <button
+                                onclick="saveJournal()">
+
+                                ♡ Save
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     SETTINGS
+                ================================== -->
+
+                <section id="settingsSection"
+                         class="settings-section">
+
+                    <div class="section-heading">
+
+                        <div>
+                            ⚙️
+                        </div>
+
+                        <div>
+
+                            <small>
+                                PERSONAL SPACE
+                            </small>
+
+                            <h2>
+                                Settings
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="settings-card">
+
+                        <div>
+
+                            <h3>
+                                Reset Today's Progress
+                            </h3>
+
+                            <p>
+                                Clear today's completed tasks,
+                                habits and goals.
+                            </p>
+
+                        </div>
+
+
+                        <button
+                            onclick="resetToday()"
+                            class="danger-button">
+
+                            Reset Today
+
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =================================
+                     FOOTER
+                ================================== -->
+
+                <footer>
+
+                    ✦
+
+                    Made for a calmer,
+                    kinder and more meaningful life
+
+                    ✦
+
+                </footer>
+
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+
+    <!-- =========================================
+         TOAST MESSAGE
+    ========================================== -->
+
+    <div id="toast"
+         class="toast">
+
+        🌸 Saved
+
+    </div>
+
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>ss
